@@ -22,12 +22,13 @@ Web上のIDEが慣れないのでローカルで開発したい。
 added 73 packages from 89 contributors in 10.584s
 ```
 
-このまま進めようと思ったけど、[danthareja/node-google-apps-script](https://github.com/danthareja/node-google-apps-script#11-default-apps-script-developer-console-project)に`DEPRECATION NOTICE`と書かれている。代わりに`[google/clasp](https://github.com/google/clasp)`を利用する。
+このまま進めようと思ったけど、[danthareja/node-google-apps-script](https://github.com/danthareja/node-google-apps-script#11-default-apps-script-developer-console-project)に`DEPRECATION NOTICE`と書かれている。代わりに[google/clasp](https://github.com/google/clasp)を利用する。
 
 
-### [google/clasp](https://github.com/google/clasp)をインストールする
+### [clasp](https://github.com/google/clasp)をインストールする
 
 [claspを使い、Google Apps Scriptプロジェクトをgitでバージョン管理する](https://qiita.com/rf_p/items/7492375ddd684ba734f8)
+あたりを参考に進めていく。
 
 ```sh
 ❯ sudo npm i @google/clasp -g
@@ -56,6 +57,25 @@ added 278 packages from 159 contributors in 40.157s
 この中に`スクリプトID`が書かれているので、
 ***`.gitignore`に忘れずに記載すること。***
 
+ローカルで編集したファイルは、以下のようにプロジェクトにpushできる。
+
+```sh
+❯ clasp push
+```
+
+同じくブラウザ上で編集したらpullできる。
+
+```sh
+❯ clasp pull
+```
+
+同じように`clasp run <Function名>`で実行できる。`console.log`だったら`clasp logs`で確認できる。ハマるポイントなどは以下が詳しい。
+
+* [clasp run できないとき。2018-09-25](https://qiita.com/abetomo/items/59379e26679e342ef6e3)
+* [clasp logs でログを確認する。2018-09-26](https://qiita.com/abetomo/items/a63dfacde419f44cd8ca)
+
+これで一通り開発環境は整った。
+
 ## TODO: slackのファイルを取り扱う
 
 [Slackの古くなったファイルを自動で削除してみた](http://lyncs.hateblo.jp/entry/2017/06/04/191421)が参考になる。
@@ -78,3 +98,6 @@ var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 * [Slackの古くなったファイルを自動で削除してみた](http://lyncs.hateblo.jp/entry/2017/06/04/191421)
 * [Slack API](https://api.slack.com/)
 * [danthareja/node-google-apps-script](https://github.com/danthareja/node-google-apps-script#11-default-apps-script-developer-console-project)
+* [Google Apps Scriptの新しい3つの機能 その③ CLI Tool Clasp](https://qiita.com/soundTricker/items/354a993e354016945e44)
+* [clasp run できないとき。2018-09-25](https://qiita.com/abetomo/items/59379e26679e342ef6e3)
+* [clasp logs でログを確認する。2018-09-26](https://qiita.com/abetomo/items/a63dfacde419f44cd8ca)
