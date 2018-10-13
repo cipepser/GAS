@@ -30,7 +30,3 @@ function elapsedDaysToUnixTime(sec){
   return now - sec + '';
   // return now - 8.64e4 * days + '' // 8.64e4[sec] = 1[day] 文字列じゃないと動かないので型変換している
 }
-
-function sample() {
-   console.log("this is sample")
-}
