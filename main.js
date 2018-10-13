@@ -32,5 +32,5 @@ function elapsedDaysToUnixTime(sec){
 }
 
 function sample() {
-  
+   console.log("this is sample")
 }
