@@ -27,10 +27,34 @@ added 73 packages from 89 contributors in 10.584s
 
 ### [google/clasp](https://github.com/google/clasp)をインストールする
 
+[claspを使い、Google Apps Scriptプロジェクトをgitでバージョン管理する](https://qiita.com/rf_p/items/7492375ddd684ba734f8)
+
 ```sh
-sudo npm i @google/clasp -g
+❯ sudo npm i @google/clasp -g
+/usr/local/bin/clasp -> /usr/local/lib/node_modules/@google/clasp/src/index.js
++ @google/clasp@1.6.3
+added 278 packages from 159 contributors in 40.157s
 ```
 
+[ここ](https://script.google.com/home/usersettings)にアクセスして、`Google Apps Script API`をオンにする。
+
+
+```sh
+❯ clasp login
+```
+
+ブラウザが立ち上がるのでログインする。
+ターミナルに`Authorization successful.`と出る。
+
+ブラウザのプロジェクト上から`スクリプトID`を持ってきて、以下のようにcloneする。
+
+```sh
+❯ clasp clone <スクリプトID>
+```
+
+上記でプロジェクト上のファイルがローカルにcloneされるが、一緒に`.clasp.json`が生成される。
+この中に`スクリプトID`が書かれているので、
+***`.gitignore`に忘れずに記載すること。***
 
 ## TODO: slackのファイルを取り扱う
 
