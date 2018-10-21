@@ -1,12 +1,16 @@
-
 function listupfiles() {
   const options = {
     ts_to: elapsedDaysToUnixTime(100),
     count: 1000
   }
-  Logger.log(filesList(options))
+  console.log('execute listupfiles 15');
+  Logger.log('execute listupfiles 15');
+ 
+  const list = filesList(options);
+  Logger.log(list);
+  console.log(list);
+  return '15'
 }
-
 
 /* ファイルのリスト */
 function filesList(data){
