@@ -90,6 +90,13 @@ added 278 packages from 159 contributors in 40.157s
 - 2.で`clasp version`や`clasp deploy`を加えても同じ挙動
 - ブラウザ上のプロジェクトで見ると`公開 - 実行可能APIとして導入...`が2.で上げたバージョンになっていない
 
+以下で解決した。
+
+```sh
+❯ clasp run --dev listupfiles
+Result: 15
+```
+
 
 ## TODO: slackのファイルを取り扱う
 
@@ -115,3 +122,4 @@ var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 * [Google Apps Scriptの新しい3つの機能 その③ CLI Tool Clasp](https://qiita.com/soundTricker/items/354a993e354016945e44)
 * [clasp run できないとき。2018-09-25](https://qiita.com/abetomo/items/59379e26679e342ef6e3)
 * [clasp logs でログを確認する。2018-09-26](https://qiita.com/abetomo/items/a63dfacde419f44cd8ca)
+* [clasp](https://github.com/google/clasp)
