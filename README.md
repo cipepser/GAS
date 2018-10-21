@@ -74,7 +74,22 @@ added 278 packages from 159 contributors in 40.157s
 * [clasp run できないとき。2018-09-25](https://qiita.com/abetomo/items/59379e26679e342ef6e3)
 * [clasp logs でログを確認する。2018-09-26](https://qiita.com/abetomo/items/a63dfacde419f44cd8ca)
 
-これで一通り開発環境は整った。
+~~これで一通り開発環境は整った。~~
+と思ったが`clasp run`の挙動が想定と違う。
+
+### clasp runをローカルでしたい
+
+事象は以下の通り。
+
+1. ローカルでコードを編集
+1. `clasp push`する。
+1. `clasp run`すると2.で`push`したコードが実行されない。
+
+切り分けをしたところ
+
+- 2.で`clasp version`や`clasp deploy`を加えても同じ挙動
+- ブラウザ上のプロジェクトで見ると`公開 - 実行可能APIとして導入...`が2.で上げたバージョンになっていない
+
 
 ## TODO: slackのファイルを取り扱う
 
@@ -89,7 +104,6 @@ added 278 packages from 159 contributors in 40.157s
 ```js
 var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 ```
-
 
 ## References
 * [Google Apps Script](https://developers.google.com/apps-script/)
