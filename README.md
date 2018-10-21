@@ -102,6 +102,7 @@ Result: 15
 [\[GAS\] claspで設定不要でTypescriptが使えるようになりました](https://qiita.com/mildcoffee/items/56a79e271dd28eb038b7)
 をもとに触ってみる。記事の通り`test`ディレクトリを切った。
 
+フィボナッチ数列までできた。
 
 ## TODO: slackのファイルを取り扱う
 
@@ -129,3 +130,9 @@ var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 * [clasp logs でログを確認する。2018-09-26](https://qiita.com/abetomo/items/a63dfacde419f44cd8ca)
 * [clasp](https://github.com/google/clasp)
 * [\[GAS\] claspで設定不要でTypescriptが使えるようになりました](https://qiita.com/mildcoffee/items/56a79e271dd28eb038b7)
+* [\[GAS\]実行に失敗: その操作を実行する権限がありません。に悩んだこと](https://qiita.com/VirgomanBros/items/41a46d778dc6fcac0d0b)
+* [\[GAS\] 実行する権限がありません。についての対策まとめ](https://qiita.com/NickelCreate/items/55b888b66695527c85b0)
+* [
+Manifests - Google Apps Script](https://developers.google.com/apps-script/concepts/manifests)
+* [
+Authorization Scopes - Google Apps Script](https://developers.google.com/apps-script/concepts/scopes)
