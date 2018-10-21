@@ -102,6 +102,8 @@ Result: 15
 [\[GAS\] claspで設定不要でTypescriptが使えるようになりました](https://qiita.com/mildcoffee/items/56a79e271dd28eb038b7)
 をもとに触ってみる。記事の通り`test`ディレクトリを切った。
 
+`yarn add @types/google-apps-script`で初期化。
+
 フィボナッチ数列までできた。
 
 ## TODO: slackのファイルを取り扱う
