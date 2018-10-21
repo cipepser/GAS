@@ -3,6 +3,6 @@ const greeter = (person: string) => {
 }
 
 function testGreeter() {
-  const =user = 'Grant';
+  const user = 'Grant';
   Logger.log(greeter(user));
 }
