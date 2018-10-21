@@ -97,6 +97,11 @@ added 278 packages from 159 contributors in 40.157s
 Result: 15
 ```
 
+## GASでTypeScript
+
+[\[GAS\] claspで設定不要でTypescriptが使えるようになりました](https://qiita.com/mildcoffee/items/56a79e271dd28eb038b7)
+をもとに触ってみる。記事の通り`test`ディレクトリを切った。
+
 
 ## TODO: slackのファイルを取り扱う
 
@@ -123,3 +128,4 @@ var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 * [clasp run できないとき。2018-09-25](https://qiita.com/abetomo/items/59379e26679e342ef6e3)
 * [clasp logs でログを確認する。2018-09-26](https://qiita.com/abetomo/items/a63dfacde419f44cd8ca)
 * [clasp](https://github.com/google/clasp)
+* [\[GAS\] claspで設定不要でTypescriptが使えるようになりました](https://qiita.com/mildcoffee/items/56a79e271dd28eb038b7)
