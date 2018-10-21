@@ -2,3 +2,4 @@
 client_credentials.json
 .clasprc.json
 node_modules
+yarn.lock
