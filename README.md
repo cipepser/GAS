@@ -122,14 +122,6 @@ Result: 15
 var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 ```
 
-- [ ] slackから取得したファイルの一覧をtypescriptで書き直す
-- [ ] slackからファイルを取得して保存する（一度ローカル？）
-- [ ] google driveの特定のフォルダを指定する方法
-- [ ] サブディレクトリを切る
-- [ ] ローカルにあるファイルをアップロードする
-- [ ] slackからファイルを取得して、google driveに保存する（ローカルではなく直接）
-- [ ] 保存できたファイルをslack上から削除する
-
 ## References
 * [Google Apps Script](https://developers.google.com/apps-script/)
 * [Google Apps Scriptの開発をモダンに行う方法](https://tech.speee.jp/entry/2016/04/28/190236)
