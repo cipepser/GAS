@@ -122,6 +122,10 @@ Result: 15
 var TOKEN = PropertiesService.getScriptProperties().getProperty("TOKEN");
 ```
 
+なお、`Logger.log()`でログを出力すれば、`clasp run --dev`でも`clasp logs`で出力ログを確認できる。
+
+
+
 ## References
 * [Google Apps Script](https://developers.google.com/apps-script/)
 * [Google Apps Scriptの開発をモダンに行う方法](https://tech.speee.jp/entry/2016/04/28/190236)
