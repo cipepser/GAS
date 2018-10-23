@@ -100,7 +100,9 @@ Result: 15
 ## GASでTypeScript
 
 [\[GAS\] claspで設定不要でTypescriptが使えるようになりました](https://qiita.com/mildcoffee/items/56a79e271dd28eb038b7)
-をもとに触ってみる。記事の通り`test`ディレクトリを切った。
+をもとに触ってみる。記事の通り`test`ディレクトリを切った。  
+→上位のディレクトリで`yarn add`(以下のコマンド)で初期化したら`appsscript.json`がデグレったので`test`ディレクトリは削除する。
+[このcommit](https://github.com/cipepser/GAS/tree/bf6b47fbb3ade38b8bd0d8ebf4185e8c50b28892)で見れる。
 
 `yarn add @types/google-apps-script`で初期化。
 
